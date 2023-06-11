@@ -14,3 +14,35 @@
   object-fit: cover;
   height: 10rem;
 }
+
+.content {
+  width: 100%;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+
+.content h2 {
+  margin: 0.5rem 0;
+}
+
+.date,
+.address {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.actions a {
+  display: block;
+}
+
+.actions a span {
+  vertical-align: middle;
+}
