@@ -1,3 +1,4 @@
+import EventContent from "@/components/event-details/event-content";
 import EventLogistics from "@/components/event-details/event-logistics";
 import EventSummary from "@/components/event-details/event-summary";
 import { getEventById } from "@/service";
@@ -15,8 +16,11 @@ const EventDetailsPage = () => {
         date={event.date}
         address={event.location}
         image={event.image}
-        imageAlt={event.title}
+        title={event.title}
       ></EventLogistics>
+      <EventContent>
+        <p>{event.description}</p>
+      </EventContent>
     </>
   );
 };
