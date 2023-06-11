@@ -1,5 +1,5 @@
+import EventList from "@/components/events/event-list";
 import { getFeaturedEvents } from "@/service";
-import EventList from "./components/event-list";
 
 export default function Home() {
   const featuredEvents = getFeaturedEvents();
